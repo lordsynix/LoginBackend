@@ -2,6 +2,8 @@ const express = require('express');
 const keys = require('./config/keys.js');
 const app = express();
 const bodyParser = require('body-parser');
+const dotenv = require('dotenv');
+dotenv.config({path}/config/config.env);
 
 // Parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }));

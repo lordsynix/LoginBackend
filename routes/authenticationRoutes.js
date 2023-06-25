@@ -9,7 +9,8 @@ const passwordRegex = new RegExp("(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{8,24})")
 module.exports = app => {
     // Routes
     app.post('/account/login', async (req, res) => {
-
+        console.log("login called");
+        
         var response = {};
 
         const { rUsername, rPassword } = req.body;
@@ -51,6 +52,7 @@ module.exports = app => {
     });
 
     app.post('/account/create', async (req, res) => {
+        console.log("create called");
 
         var response = {};
 
