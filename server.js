@@ -3,8 +3,8 @@ const keys = require('./config/keys.js');
 const app = express();
 const bodyParser = require('body-parser');
 
-// Parse application/x-www-form-urlencoded
-app.use(bodyParser.urlencoded({ extended: false }));
+// parse application/x-www-form-urlencoded
+app.use(bodyParser.urlencoded({ extended: false }))
 
 // Setting up DB
 const mongoose = require('mongoose');
